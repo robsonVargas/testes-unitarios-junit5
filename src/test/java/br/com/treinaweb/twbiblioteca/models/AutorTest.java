@@ -1,10 +1,7 @@
 package br.com.treinaweb.twbiblioteca.models;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import static org.junit.jupiter.api.Assertions.*;
 import java.time.LocalDate;
-
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class AutorTest {
@@ -18,7 +15,7 @@ public class AutorTest {
         var estaVivo = autor.estaVivo();
 
         // verificação
-        assertEquals(true, estaVivo);
+        assertTrue(estaVivo);
     }
 
     @Test
@@ -31,6 +28,6 @@ public class AutorTest {
         var estaVivo = autor.estaVivo();
 
         // verificação
-        assertEquals(false, estaVivo);
+        assertFalse(estaVivo);
     }
 }
